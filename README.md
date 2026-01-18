@@ -1,4 +1,4 @@
-# Credit Risk PD Modeling & Credit Scorecard (End-to-End)
+# Credit Risk PD Modeling (End-to-End) 
 
 ## 📌 Project Overview
 

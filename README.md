@@ -83,7 +83,7 @@ This project is intended for **educational and demonstration purposes only**. It
 
 ## 👤 Author
 
-**Vanshaj Sri, FRM**
+**Vanshaj, FRM**
 Credit Risk & Model Validation Enthusiast
 
 ---

@@ -57,65 +57,12 @@ The project is intentionally built using **logistic regression**, reflecting its
 
 > Distinction maintained between **discrimination** and **calibration**, as expected in banking model validation.
 
----
-
-## 🔁 PD → Credit Scorecard Conversion
-
-### Why a Scorecard?
-
-* PDs are statistically accurate but difficult for business use
-* Credit scores are **stable, monotonic, and interpretable**
-
-### Steps:
-
-* Convert PD to **log-odds**
-* Apply **Points-to-Double-Odds (PDO)** scaling
-* Anchor scores using base score and base odds
-* Create score bands for risk segmentation
-
-> Higher score = lower default risk
-
----
-
-## 📊 Validation of Scorecard
-
-* Default rate monotonicity across score bands
-* KS statistic using score
-* AUC invariance check (score is a transformation of PD)
-
----
-
 ## 🛠 Tools & Technologies
 
 * **Python**: pandas, numpy, scikit-learn
 * **Modeling**: Logistic Regression (Regularized)
 * **Validation Metrics**: AUC, Gini, KS, Brier Score
 * **Visualization**: matplotlib
-
----
-
-## 📁 Repository Structure
-
-```
-credit-risk-pd-scorecard/
-│
-├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_pd_model.ipynb
-│   ├── 03_calibration.ipynb
-│   └── 04_scorecard.ipynb
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── results/
-│   ├── model_metrics.csv
-│   └── calibration_plots.png
-│
-├── README.md
-└── requirements.txt
-```
 
 ---
 
